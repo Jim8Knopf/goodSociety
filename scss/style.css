@@ -1,12 +1,33 @@
+body {
+  background-image: url("../img/simple-paper-texture.jpg");
+  background-size: cover;
+}
+
 h1 {
   color: green;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 30% 30% 30% 10%;
-  grid-gap: 10px;
-  padding: 10px;
+  grid-template-columns: 30% 30% 30% auto;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+
+.grid-item {
+  padding: 4%;
+  padding-top: 26%;
+}
+.grid-item > h2 {
+  text-align: center;
+}
+
+.character-arch {
+  background-image: url("../img/arch.png");
+  background-size: 103%;
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 
 .grid-header {

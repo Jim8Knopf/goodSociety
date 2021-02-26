@@ -1,15 +1,36 @@
 $menue-widh: 10%;
 $character-row: ((100%-$menue-widh)/3);
 
+body {
+    background-image: url("../img/simple-paper-texture.jpg");
+    background-size: cover;
+}
+
 h1{
     color: green;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: $character-row $character-row $character-row $menue-widh ;
-    grid-gap: 10px;
-    padding: 10px;
+    grid-template-columns: $character-row $character-row $character-row auto;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+.grid-item {
+    padding: 4%;
+    padding-top: 26%;
+    > h2 {
+        text-align: center;
+    }
+}
+
+.character-arch {
+    background-image: url("../img/arch.png");
+    background-size: 103%;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 .grid-header {
