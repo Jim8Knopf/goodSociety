@@ -1,3 +1,7 @@
+@font-face {
+    font-family: OldLondon;
+    src: url("../font/OldLondon.ttf");
+}
 $menue-widh: 10%;
 $character-row: ((100%-$menue-widh)/3);
 
@@ -6,9 +10,6 @@ body {
     background-size: cover;
 }
 
-h1{
-    color: green;
-}
 
 .grid-container {
     display: grid;
@@ -44,4 +45,21 @@ img {
     margin: 10%;
     margin-bottom: 0;
     margin-top: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: OldLondon;
+}
+h1{
+    font-size: 2.5rem;
+    color: green;
+}
+h2 {
+    font-size: 2.1rem;
+}
+h3 {
+    font-size: 1.4rem;
+}
+.roll {
+    font-size: 3.5rem;
 }

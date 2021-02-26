@@ -1,10 +1,10 @@
+@font-face {
+  font-family: OldLondon;
+  src: url("../font/OldLondon.ttf");
+}
 body {
   background-image: url("../img/simple-paper-texture.jpg");
   background-size: cover;
-}
-
-h1 {
-  color: green;
 }
 
 .grid-container {
@@ -41,4 +41,25 @@ img {
   margin: 10%;
   margin-bottom: 0;
   margin-top: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: OldLondon;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: green;
+}
+
+h2 {
+  font-size: 2.1rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+.roll {
+  font-size: 3.5rem;
 }/*# sourceMappingURL=style.css.map */
