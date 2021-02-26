@@ -1,3 +1,17 @@
 h1{
     color: green;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-header {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    text-align: center;
+}
