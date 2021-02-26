@@ -1,0 +1,26 @@
+$menue-widh: 10%;
+$character-row: ((100%-$menue-widh)/3);
+
+h1{
+    color: green;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: $character-row $character-row $character-row $menue-widh ;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-header {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    text-align: center;
+} 
+
+img {
+    width: 80%;
+    margin: 10%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
