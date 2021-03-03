@@ -2,7 +2,7 @@
     font-family: OldLondon;
     src: url("../font/OldLondon.ttf");
 }
-$menue-widh: 10%;
+$menue-widh: 20%;
 $character-row: ((100%-$menue-widh)/3);
 
 body {
@@ -25,18 +25,41 @@ body {
     > h2 {
         text-align: center;
     }
+    &.left {
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding-top: 5rem;
+    }
+    &.right {
+        text-align: center;
+        padding-top: 5rem;
+    }
+    &.exp {
+        grid-column-start: 1;
+        grid-column-end: -2;
+        padding-top: 1rem;
+    }
+    &.character-arch {
+        background-image: url("../img/arch.png");
+        background-size: 103%;
+        background-repeat: no-repeat;
+        background-position-x: center;
+    }
+    &.menu {
+        grid-column-start: -1;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding-top: 3%;
+    }
 }
 
-.character-arch {
-    background-image: url("../img/arch.png");
-    background-size: 103%;
-    background-repeat: no-repeat;
-    background-position-x: center;
-}
 
 .grid-header {
     grid-column-start: 1;
-    grid-column-end: -1;
+    grid-column-end: 6;
     text-align: center;
 } 
 
@@ -52,7 +75,6 @@ h1, h2, h3, h4 {
 }
 h1{
     font-size: 2.5rem;
-    color: green;
 }
 h2 {
     font-size: 2.1rem;
@@ -63,3 +85,6 @@ h3 {
 .roll {
     font-size: 3.5rem;
 }
+
+
+// 54a edwin - naval friend  |  44a joy - suitor or sister
